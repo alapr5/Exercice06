@@ -10,24 +10,38 @@
 <header><h1>Contact</h1></header>
 
 <form name="account" autocomplete>
-      <table class="auto-style1">
+      <table>
           <tr>
-              <td class="auto-style2" colspan=2><strong>Edit a contact</strong></td>
+              <td class="auto-style2" colspan=2><h2>Edit a contact</h2></td>
           </tr>
           <tr>
-              <td colspan=2><label id="error">error text</label></td>
+              <td colspan=2>
+              <h4><label id="error"></label></h4>
+              </td>
           </tr>
           <tr>
-              <td class="auto-style2">ID</td>
+              <td><h3>ID</h3></td>
               <td><input id="id" type="number" min="1" max="999999" required/></td>
           </tr>
           <tr>
-              <td class="auto-style2">First Name</td>
+              <td><h3>First Name</h3></td>
               <td><input id="firstname" type="text" required /></td>
           </tr>
           <tr>
+              <td><h3>Name</h3></td>
+              <td><input id="name" type="text" required /></td>
+          </tr>
+          <tr>
+              <td><h3>E-Mail</h3></td>
+              <td><input id="email" type="text"/></td>
+          </tr>
+          <tr>
+              <td><h3>Phone Number</h3></td>
+              <td><input id="phone" type="text"/></td>
+          </tr>
+          <tr>
               <td></td>
-              <td aling="right"><button value="" id="btn_create" class="btns">Enregistrer</button></td>
+              <td aling="right"><button value="" id="btn_create" class="btns">Save</button></td>
           </tr>
       </table>
 </form>

@@ -1,46 +1,45 @@
 body {
-  background-color: #D8D8D8;
-  font-family: 'calibri;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 1.2em;
-  margin: 15px;
-  padding: 20px;
-}
-
-h1, p {
-  color: #333;
+  background-color: #FFFFFF;
+  margin: 5px;
+  padding: 5px;
+  line-height: 0em;
 }
 
 form {
-  background: #848484;
+  background: #CECECE;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  padding: 20px;
-  width: 400px;
+  padding: 10px;
 }
 
-.auto-style1 {
-  width: 25%;
-  border: 1px solid #0000FF;
+h1 {
+  color: #333;
+  font-family: 'calibri;
+  font-size: 17px;
+  font-weight: Bold;
+}
+h2 {
+  color: #000000;
+  font-family: 'calibri;
+  font-size: 14px;
+  font-weight: bold;
+}
+h3 {
+  color: #333333;
+  font-family: 'cambria';
+  font-size: 12px;
 }
 
-.auto-style2 {
-  width: 107px;
- }
-
-.auto-style3 {
-   width: 25%;
-   border: 1px solid #008080;
-}
-
-#name, #email, #number, #balance, #pin_code {
-  width: 155px;
-}
-
-.btns {
-  width: 127px;
+h4 {
+  background-color: #FFFFCC;
+  color: #FF9999;
+  font-family: 'cambria';
+  font-size: 12px;
+  font-weight: bold;
+  margin: 12px 12px 12px 12px;
+  padding: 12px 0px 12px 12px;
+  border-width: medium;
 }
 
 input {
@@ -49,7 +48,11 @@ input {
 }
 
 :required {
-  border-color: #1be032;
-  box-shadow:
-    0 0 5px rgba(57, 237, 78, .5);
+  background-color: #FFFFCC;
+}
+textarea:focus { 
+background : #FFFDEA;
+
+.btns {
+  width: 100px;
 }

@@ -6,7 +6,7 @@ import 'dart:json';
 part '../model/person.dart';
 
 List contact_id;
-InputElement id, firstname;
+InputElement id, firstname, name, email, phone;
 LabelElement lbl_error;
 ButtonElement btn_create;
 Person per;
@@ -20,6 +20,9 @@ void main() {
 bind_elements() {
   id = query('#id');
   firstname = query('#firstname');
+  name = query('#name');
+  email = query('#email');
+  phone = query('#phone');
   btn_create = query('#btn_create');
   lbl_error = query('#error');
 }
@@ -27,6 +30,7 @@ bind_elements() {
 attach_event_handlers() {
   id.onInput.listen(readData);
   firstname.onBlur.listen(notEmpty);
+  name.onBlur.listen(notEmpty);
   btn_create.onClick.listen(storeData);
 }
 
@@ -64,7 +68,7 @@ readData(Event e) {
 
 storeData(Event e) {
     // creating the objects:
-    Person p = new Person(int.parse(id.value), firstname.value);
+    Person p = new Person(int.parse(id.value), firstname.value, name.value, email.value, phone.value);
     // store data in local storage:
     try {
       window.localStorage["Person:${p.id}"] = p.toJson();
