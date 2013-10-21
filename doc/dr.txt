@@ -1,0 +1,17 @@
+ex06
+
+6/10
+
+import 'dart:json';
+->
+import 'dart:convert';
+
+(-1) .gitignore ?
+
+(-2)
+Commencez avec une liste (ou un tableau) des contacts existants
+que l'utilisateur peut mettre à jour ou supprimer.
+
+(-1)
+les données enregistrées ne sont pas présentés à la prochaine fois
+
